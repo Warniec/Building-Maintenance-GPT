@@ -11,7 +11,7 @@ export default function BuildingMaintenanceUI() {
   // Fetch reports from backend
   useEffect(() => {
     axios.get("http://18.119.137.210:8000/files/").then((response) => {
-      setReports(response.data.reports);
+      setReports(response.data.files);
     });
   }, []);
 
